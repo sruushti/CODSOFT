@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Agency Landing Page</title>
+    <style>
+     body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        header {
+            background-color: #ff4081;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+            color: #fff;
+            margin: 0;
+            flex: 1;
+            text-align: left;
+        }
+
+        nav {
+            flex: 2;
+            text-align: right;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ff8e53;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #ff4081, #ff8e53);
+            color: #fff;
+            padding: 100px 0;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: #ff4081;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .features, .pricing, .contact {
+            background-color: #f5f5f5;
+        }
+
+        .features h2, .pricing h2, .contact h2 {
+            margin-bottom: 30px;
+            color: #ff4081;
+            font-size: 36px;
+        }
+
+        .features .feature-box, .pricing .pricing-box, .contact .contact-info {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+
+        .features .feature-box div, .pricing .pricing-box div, .contact .contact-info div {
+            width: 30%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .features .feature-box h3, .pricing .pricing-box h3, .contact .contact-info h3 {
+            margin-bottom: 15px;
+            font-size: 24px;
+            color: #ff4081;
+        }
+
+        .features .feature-box p, .pricing .pricing-box p, .contact .contact-info p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Landing Page</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Creative Digital Agency</h2>
+            <p>Discover the amazing features that will revolutionize your life!</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="feature-box">
+                <div>
+                    <h3>Pay-per-click advertising (PPC)</h3>
+                    <p>Can include Google Shopping, Display & Remarketing Ads, Bing Advertising</p>
+                </div>
+                <div>
+                    <h3>Content marketing</h3>
+                    <p>Involves engaging with your audience through targeted content that is informative</p>
+                </div>
+                <div>
+                    <h3>Email marketing</h3>
+                    <p>Allows you to control how and when you interact with customers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Pricing Plans</h2>
+            <div class="pricing-box">
+                <div>
+                    <h3>Pro Plan</h3>
+                    <p>$49.99/month</p>
+                    <p>Ideal for small teams and professionals.</p>
+                </div>
+                <div>
+                    <h3>Enterprise Plan</h3>
+                    <p>$99.99/month</p>
+                    <p>Best for large organizations requiring premium features.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div>
+                    <h3>Email</h3>
+                    <p>intern@codsoft.com</p>
+                </div>
+                <div>
+                    <h3>Phone</h3>
+                    <p>+1-123-456-7890</p>
+                </div>
+                <div>
+                    <h3>Address</h3>
+                    <p>0123 CodSoft St., Silicon Valley, CA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024  @Company. All rights reserved.</p>
+            <p>Owner:Srush</p>
+            <p>Web Development Internship (Level 1: Task 1)</p>
+        </div>
+    </footer>
+</body>
+</html>
